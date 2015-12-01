@@ -1,9 +1,11 @@
-﻿var TicTacToe = function (playerChar) {
+﻿var myNS = myNS || {};
+
+myNS.TicTacToe = function (playerChar) {
     this.board = [['', ''], ['', ''], ['', ''], ['', ''], ['', ''], ['', ''], ['', ''], ['', ''], ['', '']];
     this.currentPlayerChar = playerChar;
 }
 
-TicTacToe.prototype = {
+myNS.TicTacToe.prototype = {
     newGame: function () {
                 for(var i =0; i < 3; i++)
                 {

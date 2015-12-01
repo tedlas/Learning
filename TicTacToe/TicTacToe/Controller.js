@@ -2,15 +2,16 @@
 /// <reference path="jquery-1.9.1.js" />
 
 $(function () {
-    var myNS = myNS || {};
-    myNS.ticTacToe = new TicTacToe('X');
+    myNS = myNS || {};
+    
+    ticTacToe = new myNS.TicTacToe('X');
 
     // Initialize a game
-    myNS.ticTacToe.newGame();
+    ticTacToe.newGame();
 
     $("#newGame").on("click", function () {
         $("div.box").text('');
-        myNS.ticTacToe.newGame();
+        ticTacToe.newGame();
     });
 
     // Attach Event Handlers to the boxes.
@@ -21,7 +22,7 @@ $(function () {
         var value = box.text();
 
         // if an element already exists
-        if (value != '' || myNS.ticTacToe.IsGameOver() || myNS.ticTacToe.IsWinningCondition()) {
+        if (value != '' || ticTacToe.IsGameOver() || ticTacToe.IsWinningCondition()) {
             alert("Move not possible.")
             return;
         }
@@ -32,23 +33,23 @@ $(function () {
         var x = Math.floor(pos/3);;
         var y = pos % 3;
 
-        var currChar = myNS.ticTacToe.getCurrentPlayerCharacter();
+        var currChar = ticTacToe.getCurrentPlayerCharacter();
 
-        myNS.ticTacToe.insert(x, y, currChar);
+        ticTacToe.insert(x, y, currChar);
 
         box.text(currChar);
 
-        if (myNS.ticTacToe.IsWinningCondition()){
-            alert('Player ' + myNS.ticTacToe.getCurrentPlayerCharacter() + ' has won');
+        if (ticTacToe.IsWinningCondition()){
+            alert('Player ' + ticTacToe.getCurrentPlayerCharacter() + ' has won');
         }
-        else if (myNS.ticTacToe.IsGameOver()){
+        else if (ticTacToe.IsGameOver()){
             alert('Game Over');
         }
         else {
             if(currChar == 'O')
-                myNS.ticTacToe.setCurrentPlayerCharacter('X');
+                ticTacToe.setCurrentPlayerCharacter('X');
             else
-                myNS.ticTacToe.setCurrentPlayerCharacter('O');
+                ticTacToe.setCurrentPlayerCharacter('O');
         }
     });
 
