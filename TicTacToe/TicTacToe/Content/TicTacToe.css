@@ -1,0 +1,19 @@
+﻿body {
+}
+
+.row
+{
+
+}
+
+.box
+{
+    width: auto;
+    min-width: 100px;
+    min-height: 105px;
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 72px;
+    vertical-align: bottom;
+    text-align: center;
+}
