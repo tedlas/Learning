@@ -15,22 +15,22 @@ myNS.TicTacToeMP = function (playerChar) {
                board[x][y] = character;
            }
        },
-       IsWinningCondition = function () {
-           return IsCellValueSameForRow(0) || IsCellValueSameForRow(1) || IsCellValueSameForRow(2) ||
-                   IsCellValueSameForColumn(0) || IsCellValueSameForColumn(1) || IsCellValueSameForColumn(2) ||
-                   IsCellValueSameDiagnolly();
+       isWinningCondition = function () {
+           return isCellValueSameForRow(0) || isCellValueSameForRow(1) || isCellValueSameForRow(2) ||
+                   isCellValueSameForColumn(0) || isCellValueSameForColumn(1) || isCellValueSameForColumn(2) ||
+                   isCellValueSameDiagnolly();
        },
-       IsCellValueSameForRow = function (row) {
+       isCellValueSameForRow = function (row) {
            return (board[row][0] != '' && board[row][0] == board[row][1] && board[row][1] == board[row][2]);
        },
-       IsCellValueSameForColumn = function (col) {
+       isCellValueSameForColumn = function (col) {
            return (board[0][col] != '' && board[0][col] == board[1][col] && board[1][col] == board[2][col]);
        },
-       IsCellValueSameDiagnolly = function () {
+       isCellValueSameDiagnolly = function () {
            return (board[0][0] != '' && board[0][0] == board[1][1] && board[1][1] == board[2][2]) ||
                    (board[0][2] != '' && board[0][2] == board[1][1] && board[1][1] == board[2][0]);
        },
-        IsGameOver = function () {
+        isGameOver = function () {
             for (var i = 0; i < 3; i++) {
                 for (var j = 0; j < 3; j++) {
                     if (board[i][j] == '')
@@ -49,11 +49,11 @@ myNS.TicTacToeMP = function (playerChar) {
     return {
         newGame: newGame,
         insert: insert,
-        IsWinningCondition: IsWinningCondition,
-        IsCellValueSameForRow: IsCellValueSameForRow,
-        IsCellValueSameForColumn: IsCellValueSameForColumn,
-        IsCellValueSameDiagnolly: IsCellValueSameDiagnolly,
-        IsGameOver: IsGameOver,
+        isWinningCondition: isWinningCondition,
+        isCellValueSameForRow: isCellValueSameForRow,
+        isCellValueSameForColumn: isCellValueSameForColumn,
+        isCellValueSameDiagnolly: isCellValueSameDiagnolly,
+        isGameOver: isGameOver,
         setCurrentPlayerCharacter: setCurrentPlayerCharacter,
         getCurrentPlayerCharacter: getCurrentPlayerCharacter
     };

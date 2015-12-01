@@ -27,7 +27,7 @@ $(function () {
         var value = box.text();
 
         // if an element already exists
-        if (value != '' || ticTacToe.IsGameOver() || ticTacToe.IsWinningCondition()) {
+        if (value != '' || ticTacToe.isGameOver() || ticTacToe.isWinningCondition()) {
             alert("Move not possible.")
             return;
         }
@@ -44,10 +44,10 @@ $(function () {
 
         box.text(currChar);
 
-        if (ticTacToe.IsWinningCondition()){
+        if (ticTacToe.isWinningCondition()){
             alert('Player ' + ticTacToe.getCurrentPlayerCharacter() + ' has won');
         }
-        else if (ticTacToe.IsGameOver()){
+        else if (ticTacToe.isGameOver()){
             alert('Game Over');
         }
         else {
