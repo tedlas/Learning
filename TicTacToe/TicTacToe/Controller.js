@@ -1,10 +1,15 @@
 ﻿/// <reference path="TicTacToe_prototype_pattern.js" />
+/// <reference path="TicTacToe_module_pattern.js" />
 /// <reference path="jquery-1.9.1.js" />
 
 $(function () {
     myNS = myNS || {};
     
-    ticTacToe = new myNS.TicTacToe('X');
+    // with prototype pattern
+    //ticTacToe = new myNS.TicTacToe('X');
+
+    // with Module pattern
+    ticTacToe = new myNS.TicTacToeMP('X'); 
 
     // Initialize a game
     ticTacToe.newGame();
