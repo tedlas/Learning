@@ -94,6 +94,7 @@
     <Content Include="TicTacToe_module_pattern.js" />
     <Content Include="TicTacToe_prototype_pattern.js" />
     <Content Include="TicTacToe_revealing_module_pattern.js" />
+    <Content Include="TicTacToe_revealing_prototype_pattern.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
