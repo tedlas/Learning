@@ -1,5 +1,6 @@
 ﻿/// <reference path="TicTacToe_prototype_pattern.js" />
 /// <reference path="TicTacToe_module_pattern.js" />
+/// <reference path="TicTacToe_revealing_module_pattern.js" />
 /// <reference path="jquery-1.9.1.js" />
 
 $(function () {
@@ -9,7 +10,10 @@ $(function () {
     //ticTacToe = new myNS.TicTacToe('X');
 
     // with Module pattern
-    ticTacToe = new myNS.TicTacToeMP('X'); 
+    //ticTacToe = new myNS.TicTacToeMP('X'); 
+
+    // with Revealing Module pattern
+    ticTacToe = myNS.ticTacToeRMP;
 
     // Initialize a game
     ticTacToe.newGame();
