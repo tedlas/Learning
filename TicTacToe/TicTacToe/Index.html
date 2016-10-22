@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe Game on the web !</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/TicTacToe.css" rel="stylesheet" />
+
+    <script src="TicTacToe_prototype_pattern.js"></script>
+    <script src="TicTacToe_module_pattern.js"></script>
+    <script src="TicTacToe_revealing_module_pattern.js"></script>
+    <script src="TicTacToe_revealing_prototype_pattern.js"></script>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    
+    <script src="Controller.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row page-header h1">
+            <div class="col-lg-12 col-md-12 col-sm-12">Tic Tac Toe Game</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row">
+                    <div data-pos="0" class="box"></div>
+                    <div data-pos="1" class="box"></div>
+                    <div data-pos="2" class="box"></div>
+                </div>
+                <div class="row">
+                    <div data-pos="3" class="box"></div>
+                    <div data-pos="4" class="box"></div>
+                    <div data-pos="5" class="box"></div>
+                </div>
+                <div class="row">
+                    <div data-pos="6" class="box"></div>
+                    <div data-pos="7" class="box"></div>
+                    <div data-pos="8" class="box"></div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div id="newGame" class="btn-primary btn-lg">New Game</div>
+            </div>
+        </div>
+
+
+        <div class="row page-header h1">
+            <div class="col-lg-12 col-md-12 col-sm-12">Thanks for playing.</div>
+        </div>
+
+    </div>
+</body>
+</html>

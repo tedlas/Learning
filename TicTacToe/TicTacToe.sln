@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{777E57C4-09A4-404C-B8D6-5DDB165A9F02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CB0AEB3-E37E-4C03-9A8B-C0AE3DCA47DF}"
+	ProjectSection(SolutionItems) = preProject
+		..\Index.html = ..\Index.html
+		index.html = index.html
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Angular", "TicTacToe.Angular\TicTacToe.Angular.csproj", "{28C26CA4-8E55-415D-8396-8D00359C0B55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{777E57C4-09A4-404C-B8D6-5DDB165A9F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777E57C4-09A4-404C-B8D6-5DDB165A9F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777E57C4-09A4-404C-B8D6-5DDB165A9F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777E57C4-09A4-404C-B8D6-5DDB165A9F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28C26CA4-8E55-415D-8396-8D00359C0B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C26CA4-8E55-415D-8396-8D00359C0B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C26CA4-8E55-415D-8396-8D00359C0B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C26CA4-8E55-415D-8396-8D00359C0B55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
